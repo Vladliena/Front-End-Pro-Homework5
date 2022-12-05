@@ -25,8 +25,6 @@ if (operationAsk === 'add' || operationAsk === 'sub' || operationAsk === 'mult' 
         case 'div':
             result = firstNumber / secondNumber
             break;
-        default:
-            alert('something went wrong')
     }
     alert(result)
 } else {
