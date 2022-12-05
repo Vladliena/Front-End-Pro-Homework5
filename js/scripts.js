@@ -2,6 +2,7 @@ let result;
 let firstNumber;
 let secondNumber;
 let operationAsk = prompt('please add operation', 'add, sub, mult, div');
+let operation;
 
 if (operationAsk === 'add' || operationAsk === 'sub' || operationAsk === 'mult' || operationAsk === 'div') {
     do {
@@ -15,18 +16,22 @@ if (operationAsk === 'add' || operationAsk === 'sub' || operationAsk === 'mult' 
     switch (operationAsk) {
         case 'add':
             result = firstNumber + secondNumber
+            operation = '+'
             break;
         case 'sub':
             result = firstNumber - secondNumber
+            operation = '-'
             break;
         case 'mult':
             result = firstNumber * secondNumber
+            operation = '*'
             break;
         case 'div':
             result = firstNumber / secondNumber
+            operation = '/'
             break;
     }
-    alert(result)
+    alert(`${firstNumber} ${operation} ${secondNumber} = ${result}`)
 } else {
     alert('something went wrong, restart your page')
 }
